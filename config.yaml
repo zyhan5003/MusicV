@@ -1,0 +1,89 @@
+audio:
+  default_path: examples/audio
+  feature_extraction:
+    frequency:
+      n_fft: 2048
+      n_mels: 128
+    rhythm:
+      bpm_range:
+      - 60
+      - 200
+    temporal:
+      hop_size: 512
+      window_size: 2048
+    timbre:
+      n_mfcc: 13
+color_schemes:
+  default:
+    accent: '#2ecc71'
+    background: '#1a1a1a'
+    primary: '#3498db'
+    secondary: '#e74c3c'
+    text: '#ffffff'
+  neon:
+    accent: '#ffff00'
+    background: '#000000'
+    primary: '#00ffff'
+    secondary: '#ff00ff'
+    text: '#ffffff'
+  warm:
+    accent: '#f1c40f'
+    background: '#2c3e50'
+    primary: '#e67e22'
+    secondary: '#e74c3c'
+    text: '#ecf0f1'
+export:
+  format: mp4
+  path: examples/exports
+  quality: high
+gui:
+  controls:
+    enable_real_time: true
+    enable_record: true
+  theme: dark
+  window:
+    height: 800
+    title: MusicV - 音乐可视化
+    width: 1200
+particles:
+  count: 4500
+visual:
+  2d:
+    equalizer:
+      bands: 32
+      color: '#e74c3c'
+    spectrum:
+      color_map: viridis
+    waveform:
+      color: '#3498db'
+      line_width: 2
+  3d:
+    model:
+      enable: false
+      path: ''
+    spectrum_cube:
+      color_map: plasma
+      rotation_speed: 0.01
+      size: 10
+  animation:
+    beat_trigger:
+      duration: 0.5
+      enable: true
+    easing:
+      type: ease_out_cubic
+  particles:
+    color:
+      base: '#ffffff'
+      frequency_based: true
+    count: 1000
+    size_range:
+      max: 5
+      min: 1
+    speed_range:
+      max: 5
+      min: 1
+  rendering:
+    fps: 57
+    resolution:
+      height: 1080
+      width: 1920
